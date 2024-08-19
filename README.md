@@ -1,6 +1,6 @@
 # Kuyruk Simulation
 
-Kuyruk Simulation, otobüs duraklarındaki kuyrukların simülasyonunu gerçekleştiren bir WPF uygulamasıdır. Bu proje, veri tabanındaki kuyruk uzunluklarını görselleştirerek gerçek zamanlı bir simülasyon sağlar. Ayrıca, otobüs duraklarını ekleme ve kuyruk girişleri yapma gibi işlevler de sunar.
+Kuyruk Simulation, otobüs duraklarındaki kuyrukların simülasyonunu gerçekleştiren bir WPF uygulamasıdır. Bu proje, veritabanındaki kuyruk uzunluklarını görselleştirerek gerçek zamanlı bir simülasyon sağlar ve otobüs durakları ile kuyruk girişlerini yönetmek için çeşitli işlevler sunar.
 
 <p align="center">
   <img src="ScreenShoots/1.png" width="500" />
@@ -26,6 +26,11 @@ Kuyruk Simulation, otobüs duraklarındaki kuyrukların simülasyonunu gerçekle
 - **Dinamik Daireler**: Kuyruk uzunluklarına göre dairelerin boyutunu dinamik olarak ayarlar.
 - **Zamanlayıcı ve Hız Kontrolü**: Simülasyon hızını değiştirme yeteneği sağlar. Kullanıcı, simülasyon hızını 0.25x, 0.50x, 1x, 1.25x ve 2x olarak ayarlayabilir.
 - **İnteraktif UI**: Kullanıcı dostu bir arayüz ile simülasyonun başlangıcı ve hızı kolayca kontrol edilebilir.
+
+## Veri Tabanı Detayları
+
+- **Otobüs Durakları**: Veritabanında toplamda 50 adet otobüs durağı bulunmaktadır.
+- **Kuyruk Verileri**: Her otobüs durağı için 100.000 adet kuyruk uzunluğu verisi bulunmaktadır, bu da toplamda 5 milyon veri kaydını ifade eder.
 
 ## Teknolojiler
 
