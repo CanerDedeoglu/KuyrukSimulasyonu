@@ -1,0 +1,45 @@
+﻿<Window x:Class="KuyrukSimulation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Kuyruk Simülasyonu" Height="455" Width="854">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Merkezi İçerik Paneli -->
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Center" Width="500">
+            <!-- Otobüs Durağı Seçimi -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Otobüs Durağı:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <ComboBox x:Name="BusStopComboBox" Width="200" Margin="0,0,5,0"/>
+            </StackPanel>
+
+            <!-- Yeni Otobüs Durağı Ekleme -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Yeni Durağın Adı:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <TextBox x:Name="BusStopNameTextBox" Width="200" Margin="0,0,5,0" Height="20"/>
+                <Button Content="Add Bus Stop" Width="140" Click="AddBusStopButton_Click" Height="38"/>
+            </StackPanel>
+
+            <!-- Kuyruk Uzunluğu Girişi -->
+            <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                <TextBlock Text="Kuyruk Uzunluğu:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                <TextBox x:Name="QueueLengthTextBox" Width="200" Margin="0,0,5,0" Height="20"/>
+                <Button Content="Add Entry" Width="140" Click="AddEntryButton_Click" Height="38"/>
+            </StackPanel>
+
+            <!-- Simülasyon ve Listeleme Butonları -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Start Simulation" Width="227" Height="50" Click="StartSimulationButton_Click" Margin="0,0,10,0"/>
+                <Button Content="Show Queue List" Width="240" Height="50" Click="ShowQueueListButton_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

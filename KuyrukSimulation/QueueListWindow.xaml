@@ -1,0 +1,8 @@
+﻿<Window x:Class="KuyrukSimulation.QueueListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Queue List" Height="450" Width="800">
+    <Grid>
+        <ListView x:Name="QueueListView" HorizontalAlignment="Left" Height="400" Margin="10,10,0,0" VerticalAlignment="Top" Width="760"/>
+    </Grid>
+</Window>
